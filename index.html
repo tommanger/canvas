@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Master Canvs</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+
+
+<body onload="init()">
+
+    <header>
+        <input onchange="onChangeColor(this.value)" class="input-color" type="color">
+        <input onchange="onChangeBackColor(this.value)" value="#fafafa" class="input-color" type="color">
+
+        <select onchange="onSelectDraw(this.value)">
+            <option value="circles">CIRCLES</option>
+            <option value="squares">SQUARES</option>
+            <option value="lines">LINES</option>
+
+        </select>
+        <a class="btn-top" onclick="onSaveBtn(this)">SAVE</a>
+        <button class="btn-top" onclick="onClearBtn()">CLEAR</button>
+
+        <button class="btn-top" onclick="onAboutBtn()">ABOUT</button>
+
+    </header>
+
+    <div class="modal">
+        <h2>Created by</br> Zevik Grerstner</br> and Tom Manger</h2>
+        <button onclick="onAboutBtn()">X</button>
+    </div>
+
+    <canvas class="canvas" onmousemove="handlemosuemove(event)" onmouseup="handleMouseUp()" onmousedown="handleMouseDown()"></canvas>
+
+
+
+    <script src="js/util-service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

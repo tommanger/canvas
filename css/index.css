@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+
+}
+
+
+
+.input-color{
+    margin: 0;
+    border: 0;
+    background-color: #fff;
+    cursor: pointer;
+    width: 19px;
+}
+header{
+    color: #ccc;
+    width: 300px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 18px;
+    cursor: default;
+    padding: 5px 10px;
+    margin: 0 auto;
+    position: fixed;
+    left: 40%;
+}
+.btn-top{
+    margin: 0;
+    border: 0;
+    background-color: #fff;
+    cursor: pointer;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.modal{
+    position: fixed;
+    background-color: #fff;
+    width: 280px;
+    height: 167px;
+    top: 33%;
+    left: 41%;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    display: none;
+}
+.showModal{
+    display: block;
+}
